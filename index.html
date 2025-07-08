@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Slider </title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
-    <script src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Slider | Keshav Jangid</title>
 
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 
+  
 </head>
 <body>
-    <div class="container">
-        <div class="slider-wrapper">
-            <button id="prev-slide" class="slide-button material-symbols-rounded">chevron_left </button>
-            <div class="image-list">
-                <img src="images/img1.jpg" alt="img-1" class="image-item">
-                <img src="images/img2.jpg" alt="img-2" class="image-item">
-                <img src="images/img3.jpg" alt="img-3" class="image-item">
-                <img src="images/img4.jpg" alt="img-4" class="image-item">
-                <img src="images/img5.jpg" alt="img-5" class="image-item">
-                <img src="images/img6.jpg" alt="img-6" class="image-item">
-                <img src="images/img7.jpg" alt="img-7" class="image-item">
-                <img src="images/img8.jpg" alt="img-8" class="image-item">
-                <img src="images/img9.jpg" alt="img-9" class="image-item">
-                <img src="images/img10.jpg" alt="img-10" class="image-item">
-            </div>
-            <button id="next-slide" class="slide-button material-symbols-rounded">chevron_right</button>
-            <div class="slider-scrollbar">
-                <div class="scrollbar-track">
-                    <div class="scrollbar-thumb">
+  <main class="slider-container">
+    <section class="slider-wrapper">
+      <!-- Previous Button -->
+      <button id="prev-slide" class="slide-button material-symbols-rounded" aria-label="Previous Slide">
+        chevron_left
+      </button>
 
-                    </div>
-                </div>
-            </div>
+      <!-- Image List -->
+      <div class="image-list" role="list">
+        <img src="images/img1.jpg" alt="Gallery image 1" class="image-item" />
+        <img src="images/img2.jpg" alt="Gallery image 2" class="image-item" />
+        <img src="images/img3.jpg" alt="Gallery image 3" class="image-item" />
+        <img src="images/img4.jpg" alt="Gallery image 4" class="image-item" />
+        <img src="images/img5.jpg" alt="Gallery image 5" class="image-item" />
+        <img src="images/img6.jpg" alt="Gallery image 6" class="image-item" />
+        <img src="images/img7.jpg" alt="Gallery image 7" class="image-item" />
+        <img src="images/img8.jpg" alt="Gallery image 8" class="image-item" />
+        <img src="images/img9.jpg" alt="Gallery image 9" class="image-item" />
+        <img src="images/img10.jpg" alt="Gallery image 10" class="image-item" />
+      </div>
+
+      <!-- Next Button -->
+      <button id="next-slide" class="slide-button material-symbols-rounded" aria-label="Next Slide">
+        chevron_right
+      </button>
+
+      <!-- Scrollbar -->
+      <div class="slider-scrollbar">
+        <div class="scrollbar-track">
+          <div class="scrollbar-thumb"></div>
         </div>
-    </div>
-    
+      </div>
+    </section>
+  </main>
+    <script src="script.js" defer></script>
 </body>
 </html>
